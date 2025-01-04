@@ -1,0 +1,45 @@
+"use client"
+import Navbar from '@/components/Navbar';
+import { Css, Figma, Html, Js, ReactIcon, Tailwind } from '@/public/icon/Icons';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import React from 'react';
+
+const About = () => {
+  const router = useRouter()
+  return (
+    <div className="flex">
+      <Navbar />
+      <div className='py-[54px] px-[20px]'>
+        <div className='mb-[64px]'>
+          <h1 className='text-[32px] leading-[48px] font-bold text-white mb-2'>Men haqimda</h1>
+          <span className="block w-[112px] h-[8px] rounded-[10px] bg-[#39965F] mb-6"></span>
+          <p className='text-[18px] leading-[27px] font-medium text-[#FFFFFFB2] mb-[30px]'>Men Bobur Oripov, 17 yoshdaman, Buxoro viloyatida tug‘ilganman. Zamonaviy va funksional veb-saytlar yaratishga qiziqaman, shuningdek, foydalanuvchilar uchun qulay va jozibali interfeyslar ishlab chiqishga e’tibor qarataman.</p>
+          <p className='text-[18px] leading-[27px] font-medium text-[#FFFFFFB2] mb-[30px]'>Mening vazifam – veb-saytlarni foydalanuvchilar uchun intuitiv va samarali qilish, dizayn va funksionallikni mukammal darajada birlashtirish. Saytning tezkor va moslashuvchan bo‘lishini ta’minlash uchun JavaScript, TypeScript, React, Redux Toolkit, Next.js, React Query va Tailwind CSS kabi texnologiyalar bilan ishlayman.</p>
+          <p className='text-[18px] leading-[27px] font-medium text-[#FFFFFFB2] mb-[24px]'>Mening maqsadim – mijozlar uchun yuqori sifatli va zamonaviy veb-loyihalarni hayotga tatbiq etish. Agar mening xizmatlarim sizni qiziqtirsa, men bilan bog‘laning – har qanday loyiha uchun ochiqman!</p>
+          <button onClick={() => router.push('/projects')} className="w-[169px] py-[8px] text-center bg-[#39965F] text-[18px] leading-[27px] text-white rounded-lg">Loyihalar</button>
+        </div>
+        <div className="mb-[64px]">
+          <h2 className='text-[32px] leading-[48px] font-bold text-white mb-2'>Asbob-uskunalar</h2>
+          <span className="block w-[112px] h-[8px] rounded-[10px] bg-[#39965F] mb-6"></span>
+          <ul className="flex items-center flex-wrap gap-[20px]">
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Html /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Css /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Js /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Figma /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><ReactIcon /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Tailwind /></li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'>
+              <Image style={{width:"64px", height:"64px"}} src={'/images/typescript.svg'} alt='icon' priority width={64} height={64}/>
+            </li>
+            <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'>
+              <Image style={{width:"64px", height:"64px"}} src={'/images/nextjs.svg'} alt='icon' priority width={64} height={64}/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
