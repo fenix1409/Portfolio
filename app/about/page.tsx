@@ -1,6 +1,6 @@
 "use client"
 import Navbar from '@/components/Navbar';
-import { Css, Figma, Html, Js, ReactIcon, Tailwind } from '@/public/icon/Icons';
+import { Css, Design, Diamond, Figma, Html, Js, ReactIcon, Seo, Tailwind } from '@/public/icon/Icons';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
@@ -30,10 +30,44 @@ const About = () => {
             <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><ReactIcon /></li>
             <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'><Tailwind /></li>
             <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'>
-              <Image style={{width:"64px", height:"64px"}} src={'/images/typescript.svg'} alt='icon' priority width={64} height={64}/>
+              <Image style={{ width: "64px", height: "64px" }} src={'/images/typescript.svg'} alt='icon' priority width={64} height={64} />
             </li>
             <li className='w-[213px] py-[30px] px-[75px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40]'>
-              <Image style={{width:"64px", height:"64px"}} src={'/images/nextjs.svg'} alt='icon' priority width={64} height={64}/>
+              <Image style={{ width: "64px", height: "64px" }} src={'/images/nextjs.svg'} alt='icon' priority width={64} height={64} />
+            </li>
+          </ul>
+        </div>
+        <div className="mb-[64px]">
+          <h2 className='text-[32px] leading-[48px] font-bold text-white mb-2'>Men nimalar qila olaman</h2>
+          <span className="block w-[112px] h-[8px] rounded-[10px] bg-[#39965F] mb-6"></span>
+          <ul className='flex items-center gap-[20px] flex-wrap'>
+            <li className='w-[444px] p-[20px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40] flex items-center gap-[14px]'>
+              <Seo/>
+              <div>
+                <span className='text-[20px] leading-[30px] font-semibold text-white mb-[6px]'>Seo</span>
+                <p className='text-[16px] leading-[24px] text-white'>Qidiruv tizimining natijalarida sayt reytingini yaxshilash</p>
+              </div>
+            </li>
+            <li className='w-[444px] p-[20px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40] flex items-center gap-[14px]'>
+              <Design/>
+              <div>
+                <span className='text-[20px] leading-[30px] font-semibold text-white mb-[6px]'>Dizayn</span>
+                <p className='text-[16px] leading-[24px] text-white'>Kuchli dizayn va kichik detallargacha e’tibor berish </p>
+              </div>
+            </li>
+            <li className='w-[444px] p-[20px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40] flex items-center gap-[14px]'>
+              <Diamond/>
+              <div>
+                <span className='text-[20px] leading-[30px] font-semibold text-white mb-[6px]'>Sifat</span>
+                <p className='text-[16px] leading-[24px] text-white'>Ishonchli, aniq, mukammal ishlash va yuqori darajani ta'minlayman</p>
+              </div>
+            </li>
+            <li className='w-[444px] p-[20px] bg-[#1B1B1B] border-[1px] rounded-xl border-[#FFFFFF40] flex items-center gap-[14px]'>
+              <Seo/>
+              <div>
+                <span className='text-[20px] leading-[30px] font-semibold text-white mb-[6px]'>Unumdorlik</span>
+                <p className='text-[16px] leading-[24px] text-white'>Vaqtni samarali boshqarish va maqsadlarga tez yetishishdir</p>
+              </div>
             </li>
           </ul>
         </div>
